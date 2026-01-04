@@ -4,6 +4,8 @@ import { DummyService } from './dummy.service';
 
 @Module({
   controllers: [DummyController],
-  providers: [DummyService]
+  providers: [DummyService],
+  // imports:[],//Import other modules if needed 
+  exports:[DummyService]//export service if needed in other module
 })
 export class DummyModule {}
